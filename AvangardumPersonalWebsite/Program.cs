@@ -6,6 +6,8 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseStatusCodePagesWithRedirects("/{0}");
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
