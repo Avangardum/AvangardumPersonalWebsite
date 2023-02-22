@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var headerNavItems = new List<string> { "Education", "Skills", "Contact" };
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -19,15 +23,12 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Skills">Skills</a>
-                    </li>
+                    @foreach (var item in headerNavItems)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/@item">@item</a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
