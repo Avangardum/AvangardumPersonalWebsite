@@ -1,0 +1,34 @@
+﻿@page
+@model AvangardumPersonalWebsite.Pages.Skills
+
+@{
+    var skillValues = new Dictionary<string, double>
+    {
+        ["General Programming"] = 0.85,
+        ["C#"] = 0.8,
+        ["Unity"] = 0.7,
+        ["ASP.NET"] = 0.3,
+        ["HTML"] = 0.1,
+        ["JavaScript"] = 0.1,
+        ["SQL"] = 0.3,
+        ["F#"] = 0.3,
+        ["Lua"] = 0.4,
+        ["Game Design"] = 0.5,
+        ["Software Architecture"] = 0.3,
+        ["Agile"] = 0.2,
+        ["Image Editing"] = 0.1,
+        ["Video Editing"] = 0.1,
+    };
+    ViewData["Title"] = "Skills";
+}
+
+<h1>Skills</h1>
+<ul>
+    @foreach (var (skill, value) in skillValues)
+    {
+        <li>
+            <label style="width: 170px">@skill</label>
+            <progress max="1" value="@value"></progress>
+        </li>
+    }
+</ul>
