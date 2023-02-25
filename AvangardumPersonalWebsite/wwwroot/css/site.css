@@ -17,7 +17,11 @@ body {
   margin-bottom: 60px;
 }
 
-.external-website-button {
+a.external-website-button {
+  text-decoration: none;
+}
+
+img.external-website-button {
   height: 70px;
   margin-top: 5px;
   margin-bottom: 5px;
