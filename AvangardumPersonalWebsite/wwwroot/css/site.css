@@ -13,8 +13,9 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+html, body {
+  background-color: #333333;
+  color: #ffffff; /* Set the text color to white */
 }
 
 a.external-website-button {
