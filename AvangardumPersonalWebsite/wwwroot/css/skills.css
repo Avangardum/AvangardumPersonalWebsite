@@ -1,0 +1,9 @@
+﻿.skills-grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    align-items: center;
+}
+
+.skills-grid progress {
+    margin-top: 3px;
+}

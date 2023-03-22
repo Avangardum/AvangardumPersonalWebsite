@@ -1,6 +1,8 @@
 ﻿@page
 @model AvangardumPersonalWebsite.Pages.Skills
 
+<link rel="stylesheet" href="css/skills.css"/>
+
 @{
     var skillValues = new Dictionary<string, double>
     {
@@ -25,12 +27,11 @@
 }
 
 <h1>Skills</h1>
-<ul>
+
+<div class="skills-grid">
     @foreach (var (skill, value) in skillValues)
     {
-        <li>
-            <label style="width: 200px">@skill</label>
-            <progress max="1" value="@value" style="position: relative; top: 3px"></progress>
-        </li>
+        <label>@skill</label>
+        <progress max="1" value="@value"></progress>
     }
-</ul>
+</div>
