@@ -1,29 +1,36 @@
-html {
-  font-size: 14px;
+html 
+{
+    font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
+@media (min-width: 768px) 
+{
+    html 
+    {
+        font-size: 18px;
+    }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+html 
+{
+    position: relative;
+    min-height: 100%;
 }
 
-html, body {
-  background-color: #222222;
-  color: #ffffff;
+html, body 
+{
+    background-color: #222222;
+    color: #ffffff;
 }
 
-a.external-website-button {
-  text-decoration: none;
+a.external-website-button 
+{
+    text-decoration: none;
 }
 
-img.external-website-button {
-  height: 70px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+img.external-website-button 
+{
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
