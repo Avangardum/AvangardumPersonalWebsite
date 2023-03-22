@@ -1,0 +1,37 @@
+﻿h2
+{
+    margin: 20px 0;
+}
+
+p,
+.vertical-screenshot-gallery,
+.horizontal-screenshot-gallery,
+.external-website-button-gallery
+{
+    margin: 5px 0;
+}
+
+.project-info
+{
+    margin: 20px 0;
+}
+
+.vertical-screenshot-gallery img
+{
+    height: 400px
+}
+
+.horizontal-screenshot-gallery img
+{
+    width: 500px;
+}
+
+.external-website-button-gallery a
+{
+    text-decoration: none;
+}
+
+.external-website-button-gallery img
+{
+    height: 70px;
+}
