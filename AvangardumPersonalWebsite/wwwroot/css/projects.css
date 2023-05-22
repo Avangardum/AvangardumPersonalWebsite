@@ -35,3 +35,17 @@ p,
 {
     height: 70px;
 }
+
+.external-website-button-gallery button
+{
+    height: 70px;
+    padding-left: 15px;
+    padding-right: 18px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
