@@ -26,9 +26,10 @@ p,
     width: 500px;
 }
 
-.external-website-button-gallery a
+.external-website-button-gallery
 {
-    text-decoration: none;
+    display: flex;
+    gap: 5px;
 }
 
 .external-website-button-gallery img
@@ -36,16 +37,26 @@ p,
     height: 70px;
 }
 
-.external-website-button-gallery button
+.external-website-button-gallery a
 {
-    height: 70px;
-    padding-left: 15px;
-    padding-right: 18px;
+    text-decoration: none;
+}
+
+.external-website-text-button
+{
+    padding: 18px 16px;
     background-color: black;
     border-style: solid;
     border-color: white;
+    border-width: 2px;
     color: white;
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
+    text-decoration: none;
+}
+
+.external-website-text-button:hover
+{
+    color: white;
 }
