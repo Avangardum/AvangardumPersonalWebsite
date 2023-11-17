@@ -1,0 +1,6 @@
+services:
+  app:
+    image: avangardum/avangardum_personal_website
+    restart: always
+    ports:
+      - 127.0.0.1:5000:8080
